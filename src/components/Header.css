@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header__container {
+    width: 100vw;
+    display: flex;
+    background-color: #111;
+}
+
+.logo__container {
+    position: relative;
+    width: auto;
+}
+
+.logo {
+    width: 150px;
+}
+
+.top {
+    top: 0;
+    left: 0;
+    position: absolute;
+    animation: float 5s ease-in-out alternate infinite, twist 3s ease-in-out infinite;
+}
+
+
+
+@keyframes float {
+
+    from {
+        transform: translateY(-10%);
+    }
+
+    to {
+        transform: translateY(10%);
+    }
+}
+
+@keyframes twist {
+    0% {
+        transform: rotate(0deg)
+    }
+    
+    25% {
+        transform: rotate(-10deg)
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
