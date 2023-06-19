@@ -10,20 +10,31 @@
     background-color: #111;
 }
 
+.brand__container {
+    flex: 1 0 auto;
+}
+
 .logo__container {
+    flex: 1 0 auto;
     position: relative;
     width: auto;
+    align-self: flex-end;
+    background-color: blue;
 }
 
 .logo {
     width: 150px;
 }
 
-.top {
+.logo__top {
+    animation: float 5s alternate ease-in-out infinite;
+}
+
+.logo__twist__container {
     top: 0;
     left: 0;
     position: absolute;
-    animation: float 5s ease-in-out alternate infinite, twist 3s ease-in-out infinite;
+    animation: twist 7.25s alternate ease-in-out infinite;
 }
 
 
@@ -35,28 +46,16 @@
     }
 
     to {
-        transform: translateY(10%);
+        transform: translatey(10%);
     }
 }
 
 @keyframes twist {
-    0% {
-        transform: rotate(0deg)
-    }
-    
-    25% {
-        transform: rotate(-10deg)
+    from {
+        transform: rotate(5deg);
     }
 
-    50% {
-        transform: rotate(0deg);
-    }
-
-    75% {
-        transform: rotate(10deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
+    to {
+        transform: rotate(-5deg);
     }
 }
