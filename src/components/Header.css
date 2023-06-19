@@ -11,15 +11,18 @@
 }
 
 .brand__container {
+    display: flex;
     flex: 1 0 auto;
+    padding: 4px;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .logo__container {
-    flex: 1 0 auto;
+    flex: 0 1 auto;
     position: relative;
     width: auto;
     align-self: flex-end;
-    background-color: blue;
 }
 
 .logo {
@@ -36,8 +39,6 @@
     position: absolute;
     animation: twist 7.25s alternate ease-in-out infinite;
 }
-
-
 
 @keyframes float {
 
