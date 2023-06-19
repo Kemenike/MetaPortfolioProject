@@ -17,23 +17,17 @@ function Header() {
             </div>
             <div className="brand__container">
                 <SocialLink
-                    icon={
-                        <FontAwesomeIcon className='brand__logo' icon="fa-brands fa-linkedin" />
-                    }
+                    icon= "fa-brands fa-linkedin"
                     labelName="LinkedIn"
                     link='https://linkedin.com/in/kemenike/'
                     target='#'
                 />
                 <SocialLink
-                    icon={
-                        <FontAwesomeIcon className='brand__logo' icon="fa-brands fa-square-github" />
-                    }
+                    icon= "fa-brands fa-square-github"
                     labelName="GitHub"
                 />
                 <SocialLink
-                    icon={
-                        <FontAwesomeIcon className='brand__logo' icon="fa-solid fa-laptop-code" />
-                    }
+                    icon= "fa-solid fa-laptop-code"
                     labelName="Projects"
                 />
 
