@@ -1,62 +1,27 @@
 * {
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 .header__container {
+    display: flex;
     width: 100vw;
-    display: flex;
-    background-color: #111;
-}
-
-.brand__container {
-    display: flex;
-    flex: 1 0 auto;
-    padding: 4px;
-    align-items: center;
-    justify-content: space-evenly;
+    background-color: #121212;
 }
 
 .logo__container {
     flex: 0 1 auto;
-    position: relative;
-    width: auto;
-    align-self: flex-end;
+}
+
+.logo__container > img {
+    max-width: 150px;
 }
 
 .logo {
-    width: 150px;
+    padding: 30px;
 }
 
-.logo__top {
-    animation: float 5s alternate ease-in-out infinite;
-}
-
-.logo__twist__container {
-    top: 0;
-    left: 0;
-    position: absolute;
-    animation: twist 7.25s alternate ease-in-out infinite;
-}
-
-@keyframes float {
-
-    from {
-        transform: translateY(-10%);
-    }
-
-    to {
-        transform: translatey(10%);
-    }
-}
-
-@keyframes twist {
-    from {
-        transform: rotate(5deg);
-    }
-
-    to {
-        transform: rotate(-5deg);
-    }
+.link__container {
+    flex: 1 0 auto;
+    background-color: blue;
 }
