@@ -7,8 +7,8 @@ function SocialLink({ icon, labelName, link, target }) {
         <a href={link}
         target={target}
         className='socialLink__main'>
-            <FontAwesomeIcon className='brand__logo' icon={icon} />
-            <label for='brand__logo' className='brand__label'>{labelName} </label>
+            <FontAwesomeIcon className='brand__logo' size='2xl' icon={icon} />
+            <p className='brand__label'>{labelName}</p>
         </a>
     )
 }

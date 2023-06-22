@@ -5,7 +5,10 @@
 
 .header__container {
     display: flex;
-    width: 100vw;
+    position: sticky;
+    top: 0px;
+    justify-content: space-between;
+    max-width: 100vw;
     background-color: #121212;
 }
 
@@ -22,6 +25,6 @@
 }
 
 .link__container {
-    flex: 1 0 auto;
-    background-color: blue;
+    display: flex;
+    background-color: #131313;
 }
