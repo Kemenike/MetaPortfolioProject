@@ -1,6 +1,6 @@
 .landing__main {
-    height: 100vh;
+    flex-grow: 1;
     animation: rainbow 15s linear infinite;
     z-index: 0;
-    background-color: #131313;
+    background-color: #121212;
 }

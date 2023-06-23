@@ -2,7 +2,6 @@ import React from 'react'
 import "./Header.css"
 import logoMain from '../assets/logo_main.png'
 import SocialLink from './SocialLink.jsx'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Header() {
     return (
@@ -32,7 +31,7 @@ function Header() {
                     link="#projects"
                 />
                 <SocialLink 
-                    icon="fa-brands fa-square-github"
+                    icon="fa-free-solid fa-user-astronaut"
                     labelName="About Me"
                     link="#about_me"
                 />

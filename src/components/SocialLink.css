@@ -4,7 +4,7 @@
 }
 .socialLink__main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@
 }
 
 .socialLink__main:hover {
-    background-color: #F701FD;
+    background-color: #01F9FD;
     transition: all 500ms ease;
 }
 
@@ -23,13 +23,15 @@
 }
 
 .brand__logo {
-    color: #01F9FD;
+    color: #ddd;
     padding: 8px;
     transition: all 500ms ease;
 }
 
 .brand__label {
-    color: #01F9FD;
-    font-size: 1.5em;
+    color: #ddd;
+    font-size: 1.3em;
+    font-weight: 500;
     transition: all 500ms ease;
+    text-transform: uppercase;
 }

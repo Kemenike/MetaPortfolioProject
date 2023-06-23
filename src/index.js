@@ -2,14 +2,24 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { ChakraProvider } from "@chakra-ui/react";
+import { extendTheme, ChakraProvider } from "@chakra-ui/react";
 
 // Blue 01F9FD
 // Pink F701FD
 
+//Chakra Theming Colors
+const colors = {
+  brand: {
+    neon_blue: '#01F9FD',
+    neon_pink: '#F701FD'
+  }
+}
+
+const theme = extendTheme({ colors })
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <ChakraProvider>
+  <ChakraProvider theme={theme}>
     <React.StrictMode>
       <App />
     </React.StrictMode>
