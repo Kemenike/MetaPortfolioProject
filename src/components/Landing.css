@@ -3,4 +3,118 @@
     animation: rainbow 15s linear infinite;
     z-index: 0;
     background-color: #121212;
+    color: #ddd;
+    letter-spacing: 1px;
+    font-size: 2em;
+    font-family: 'Orbitron', sans-serif;
+}
+
+h1.title {
+    font-family: 'Teko', sans-serif;
+    font-size: 5em;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    line-height: 0.9em ;
+}
+
+.img__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    aspect-ratio: 1;
+    animation: float 3s alternate ease-in-out infinite;
+}
+
+.landing__main img.logoMan {
+    animation: float_twist 5s alternate ease-in-out infinite;
+}
+
+.landing__main svg{
+    position: absolute;
+}
+
+.landing__main svg path {
+    stroke-dasharray: 5% 200%;
+    stroke-dashoffset: 200px;
+    animation: draw cubic-bezier(.81, 0, .13, 1) infinite;
+}
+
+.landing__main svg path:nth-child(1) {
+    animation-duration: 2.5s;
+    animation-delay: 250ms;
+}
+.landing__main svg path:nth-child(2) {
+    stroke-dashoffset: 1050px;
+    animation-duration: 2.7s;
+    animation-name: draw-reversed;
+    animation-delay: 700ms;
+}
+.landing__main svg path:nth-child(3) {
+    animation-duration: 2.3s;
+}
+
+@keyframes draw {
+    0% {
+        stroke-dashoffset: 200px;
+    }
+    70%, 100% {
+        stroke-dashoffset: 1050px;
+    }
+
+    10% {
+        stroke-width: 1;
+    }
+    
+    35% {
+        stroke-width: 10;
+    }
+
+    50% {
+        stroke-width: 1;
+    }
+
+}
+
+@keyframes draw-reversed {
+    0% {
+        stroke-dashoffset: 1050px;
+    }
+    70%, 100% {
+        stroke-dashoffset: 100px;
+    }
+
+    10% {
+        stroke-width: 1;
+    }
+    
+    35% {
+        stroke-width: 10;
+    }
+
+    50% {
+        stroke-width: 1;
+    }
+
+}
+
+@keyframes float {
+
+    0% {
+        transform: translateY(5%);
+    }
+
+    100% {
+        transform: translateY(-5%);
+    }
+}
+
+@keyframes float_twist {
+    0% {
+        transform: rotate(3deg);
+    }
+
+    100% {
+        transform: rotate(-3deg);
+    }
 }

@@ -14,6 +14,7 @@
     font-family: 'Orbitron', sans-serif;
     font-weight: 500;
     z-index: 10;
+    border-bottom: 1px solid white;
 }
 
 .logo__container {
@@ -31,8 +32,8 @@
 }
 
 .logo__container > img:hover {
-    transform: scale(110%);
-    transition: all 250ms ease-out;
+    transform: scale(105%);
+    transition: all 150ms ease-out;
 }
 
 .link__container {
