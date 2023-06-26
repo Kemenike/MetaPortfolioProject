@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./components/Header";
 import Landing from "./components/Landing";
+import AboutMe from "./components/AboutMe";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -12,11 +13,15 @@ import {
 library.add(faLinkedin, faSquareGithub, faX, faLaptopCode, faUserAstronaut);
 
 function App() {
+
   return (
     <div className="App">
       <div className="wrapper">
         <Header />
         <Landing />
+      </div>
+      <div className="wrapper">
+        <AboutMe />
       </div>
     </div>
   );

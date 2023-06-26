@@ -4,6 +4,7 @@ import Sparkles from '../assets/Sparkles';
 import logo_man from '../assets/logo_man.png'
 
 function Landing() {
+
   return (
     <div className='landing__main'>
       <div className="text__wrapper">
