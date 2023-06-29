@@ -1,0 +1,28 @@
+#projects__main {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+    color: #ddd;
+}
+
+.projects__title {
+    padding: 5vh 3vw;
+    font-size: 6.3vw;
+    text-transform: uppercase;
+    font-family: 'Teko', sans-serif;
+}
+
+.projects__description {
+    margin: 0 10% 0 10%;
+}
+
+.projects__description > .description {
+    font-size: 28px;
+}
+
+.projects__description > .description::before {
+    width: 100%;
+    border: 2px solid white;
+}

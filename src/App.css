@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&family=Teko:wght@300;500&display=swap');
 
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*::selection {
+    background-color: #F701FD;
+    color: #131313;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;

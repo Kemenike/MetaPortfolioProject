@@ -28,12 +28,12 @@ function Header() {
                 <SocialLink 
                     icon="fa-brands fa-square-github"
                     labelName="Projects"
-                    link="#projects"
+                    link="#projects__main"
                 />
                 <SocialLink 
                     icon="fa-free-solid fa-user-astronaut"
                     labelName="About Me"
-                    link="#about_me"
+                    link="#about_me__main"
                 />
             </div>
         </div>

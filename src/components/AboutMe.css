@@ -1,0 +1,29 @@
+#about_me__main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+    color: #ddd;
+}
+
+.about_me__title{
+    position: absolute;
+    padding: 5vh 3vw;
+    font-size: 6.3vw;
+    text-transform: uppercase;
+    font-family: 'Teko', sans-serif;
+}
+
+#about_me__main .description {
+    width: 100%;
+    max-width: 1200px;
+}
+
+#about_me__main > .container {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
