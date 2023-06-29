@@ -5,7 +5,7 @@ import SocialLink from './SocialLink.jsx'
 
 function Header() {
     return (
-        <div className="header__container" >
+        <section className="header__container" >
             <div className="logo__container">
                 <img
                     src={logoMain}
@@ -36,7 +36,7 @@ function Header() {
                     link="#about_me__main"
                 />
             </div>
-        </div>
+        </section>
     )
 }
 
