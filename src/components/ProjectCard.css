@@ -1,8 +1,23 @@
 .project_card {
+    position: relative;
     width: 60vw;
     aspect-ratio: 9 / 16;
     margin: 32px;
     max-width: 1200px;
     max-height: 500px;
     border: 2px solid;
+}
+
+.project_card img {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: brightness(.7);
+}
+
+.project_card h1 {
+    font-family: 'Teko', sans-serif;
+    font-size: 5em;
 }

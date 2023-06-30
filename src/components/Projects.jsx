@@ -1,6 +1,7 @@
 import React from 'react'
 import './Projects.css';
 import ProjectCard from './ProjectCard';
+import NetflixLogo from '../assets/Netflix_Logo_RGB.png'
 
 function Projects() {
     return (
@@ -17,6 +18,7 @@ function Projects() {
                 <ProjectCard
                     title="Netflix Clone ( Notflix )"
                     description="A clone of Netflix. This project uses FirebaseAuth, React Redux and the Stripe Webhook."
+                    bg_img={NetflixLogo}
                 />
                 <ProjectCard
                     title="Google Clone"

@@ -15,6 +15,7 @@ function ProjectCard({ title, bg_img, description, link, gh_link }) {
                 <a href={gh_link}>
                     <FontAwesomeIcon icon="fa-brands fa-square-github" />
                 </a>
+                <img src={bg_img} alt="" />
             </a>
         </div>
     )
