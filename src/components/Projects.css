@@ -26,3 +26,23 @@
     width: 100%;
     border: 2px solid white;
 }
+
+.display__segment {
+    align-self: center;
+    display: flex;
+    width: 80vw;
+    max-width: 1200px;
+    margin-top: 7.5vh;
+    margin-bottom: 15vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.display__segment:nth-child(odd) {
+    border-color: #F701FD;
+}
+
+.display__segment:nth-child(even) {
+    border-color: #01F9FD;
+}

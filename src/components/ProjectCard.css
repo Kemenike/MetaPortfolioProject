@@ -1,6 +1,8 @@
 .project_card {
     width: 60vw;
+    aspect-ratio: 9 / 16;
+    margin: 32px;
     max-width: 1200px;
-    height: 20vh;
     max-height: 500px;
+    border: 2px solid;
 }

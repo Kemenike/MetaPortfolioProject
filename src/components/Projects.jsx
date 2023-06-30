@@ -9,13 +9,25 @@ function Projects() {
                 Projects
             </h1>
             <div className="projects__description">
-                <h3 className="description"> 
+                <h3 className="description">
                     These are a few of my projects. Check them out. 👇
                 </h3>
             </div>
-            <ProjectCard 
-                title="Netflix Clone"
-            />
+            <div className="display__segment">
+                <ProjectCard
+                    title="Netflix Clone ( Notflix )"
+                    description="A clone of Netflix. This project uses FirebaseAuth, React Redux and the Stripe Webhook."
+                />
+                <ProjectCard
+                    title="Google Clone"
+                />
+                <ProjectCard
+                    title="Netflix Clone"
+                />
+                <ProjectCard
+                    title="Netflix Clone"
+                />
+            </div>
         </section>
     )
 }
