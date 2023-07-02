@@ -26,7 +26,7 @@ function Header() {
                     target="#"
                 />
                 <SocialLink 
-                    icon="fa-brands fa-square-github"
+                    icon="fa-free-solid fa-laptop-code"
                     labelName="Projects"
                     link="#projects__main"
                 />

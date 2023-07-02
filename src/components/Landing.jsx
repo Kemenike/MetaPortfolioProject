@@ -7,7 +7,7 @@ function Landing() {
 
   return (
     <div className='landing__main'>
-      <div className="text__wrapper">
+      <div className="text__wrapper float">
         <h3 className='landing__subtitle subtitle'>
           Welcome! I'm
         </h3>

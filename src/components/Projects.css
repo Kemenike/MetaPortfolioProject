@@ -22,11 +22,6 @@
     font-size: 28px;
 }
 
-.projects__description > .description::before {
-    width: 100%;
-    border: 2px solid white;
-}
-
 .display__segment {
     align-self: center;
     display: flex;
