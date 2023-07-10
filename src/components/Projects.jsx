@@ -4,6 +4,7 @@ import ProjectCard from './ProjectCard';
 import NetflixLogo from '../assets/Netflix_Logo_RGB.png'
 import GoogleLogo from '../assets/Google_Logo_RGB.png'
 import HairDayLogo from '../assets/HairDay_Logo.png'
+import SpaceMan from '../assets/logo_main.png'
 
 
 function Projects() {
@@ -18,9 +19,6 @@ function Projects() {
                 </h3>
             </div>
             <div className="display__segment">
-                { /*
-                TODO: Add Project Cards for Major Projects.
-            */ }
                 <ProjectCard
                     title="Netflix Clone ( Notflix )"
                     description="A clone of Netflix. This project uses FirebaseAuth, React Redux and the Stripe Webhook."
@@ -40,7 +38,11 @@ function Projects() {
                     title="Meta Frontend Cert."
                     bg_img={HairDayLogo}
                     description="HTML Frontend Capstone Project. This was done to show how much CSS and HTML I've learned to that point. Since then my abilities have grown exponentially."
-
+                />
+                <ProjectCard
+                    title="Meta Portfolio Project"
+                    bg_img={SpaceMan}
+                    description="This project is the site you're currently on! As I create better works they will also be added to this site as well as this site getting overhauls as I develop cooler designs."
                 />
             </div>
         </section>

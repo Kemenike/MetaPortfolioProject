@@ -6,7 +6,7 @@ function ProjectCard({ title, bg_img, description, link, gh_link }) {
 
     return (
         <div className='project_card'>
-            <a href={link} target="#">
+            <a className="project_link" href={link} target="#">
                 <h1 className="project_card__title">
                     {title}
                 </h1>

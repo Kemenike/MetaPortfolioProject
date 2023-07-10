@@ -1,4 +1,5 @@
 #about_me__main {
+    position: relative;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -7,23 +8,112 @@
     color: #ddd;
 }
 
+#about_me__main .text__wrapper {
+    border-radius: 8px 0 0 8px;
+}
+
 .about_me__title{
+
     position: absolute;
     padding: 5vh 3vw;
-    font-size: 6.3vw;
+    font-size: 6.3vmin;
     text-transform: uppercase;
     font-family: 'Teko', sans-serif;
 }
 
 #about_me__main .description {
-    width: 100%;
-    max-width: 1200px;
+    margin: 0;
+    font-size: 1.5vmin;
 }
 
 #about_me__main > .container {
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.row {
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+}
+
+.contact_me__wrapper {
     display: flex;
-    flex: 1 0 auto;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 64px;
+    text-align: start;
+    border-radius: 0 8px 8px 0;
+    background-color: #01F9FD;
+    color: #121212;
+    font-weight: 500;
+}
+
+
+.contact_me__wrapper > h1 {
+    font-size: 3vmin;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.contact_me__wrapper > h3 {
+    margin-top: 4px;
+    text-align: center;
+    font-size: 1.2vmin;
+}
+
+form {
+    max-width: 600px;
+    margin: 0px 32px;
+    padding-top: 32px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2vmin;
+}
+
+input, textarea{
+    flex: 1 0 auto;
+    padding: 8px;
+    margin-bottom: 12px;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: none;
+}
+
+.submit__button {
+    background-color: #121212;
+    color: #ddd;
+    font-weight: 500;
+    font-size: 1.5vmin;
+    padding: 12px 0;
+    transition: all 250ms ease-in-out;
+}
+
+.submit__button:hover {
+    background-color: #f701fd;
+    color: #121212;
+    cursor: pointer;
+}
+
+.submit__button:active {
+    transform: scale(95%);
+    filter: brightness(70%);
+}
+
+
+@media only screen and (max-width: 1250px) {
+    
 }

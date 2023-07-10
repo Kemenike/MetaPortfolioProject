@@ -26,10 +26,11 @@
     align-self: center;
     display: flex;
     width: 80vw;
-    max-width: 1200px;
+    max-width: 1600px;
     margin-top: 7.5vh;
     margin-bottom: 15vh;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }

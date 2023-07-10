@@ -1,12 +1,33 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './TopButton.css';
 
 function TopButton() {
+
+  const [show, handleShow] = useState(false);
+  function showButton() {
+    if (window.scrollY > 50) {
+      handleShow(true);
+    } else {
+      handleShow(false);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", showButton);
+    return () => window.removeEventListener("scroll", showButton);
+  }, [])
+
+  function scrollUp() {
+    window.scrollTo(0, 0);
+  }
+
   return (
-    <div className='top_button__main hidden'>
-        <FontAwesomeIcon icon="fa-solid fa-circle-up" color="#01F9FD" size='4x'/>
-    </div>
+
+    <button className={`top_button__main ${!show && "hidden"}`} onClick={scrollUp}>
+      <FontAwesomeIcon icon="fa-solid fa-circle-up" color="#01F9FD" size='4x' />
+    </button >
+
   )
 }
 

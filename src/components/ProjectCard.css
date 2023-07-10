@@ -1,15 +1,16 @@
 .project_card {
+    display: flex;
     background: linear-gradient(60deg, rgba(247,1,253,1) 0%, rgba(1,249,253,1) 35%, rgba(1,249,253,1) 60%, rgba(247,1,253,1) 100%);    background-size: 200%;
     position: relative;
-    width: 60vw;
+    width: 40%;
     aspect-ratio: 9 / 16;
     margin: 32px;
-    max-width: 1200px;
+    max-width: 550px;
     max-height: 500px;
     z-index: 3;
     border-radius: 8px;
     animation: background-pan 10s linear infinite;
-    padding: 1% 2%;
+    padding: 1% 3%;
 }
 
 .project_card::before {
@@ -23,7 +24,8 @@
 
 .project_card img {
     position: absolute;
-    width: 90%;
+    max-width: 90%;
+    max-height: 90%;
     top: 50%;
     left: 50%;
     z-index: -1;
@@ -38,7 +40,7 @@
 
 .project_card h1 {
     font-family: 'Teko', sans-serif;
-    font-size: max(3vw, 32px);
+    font-size: 32px;
     transition: all 300ms ease-in-out;
     opacity: 0;
 }
@@ -48,10 +50,17 @@
 }
 
 .project_card p {
-    font-size: max(1.6vw, 24px);
+    font-size: 20px;
     font-family: 'orbitron', sans-serif;
     opacity: 0;
     transition: all 300ms ease-in-out;
+}
+
+.project_link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 .project_card > a {

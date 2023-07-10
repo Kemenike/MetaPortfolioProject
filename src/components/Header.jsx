@@ -19,18 +19,18 @@ function Header() {
                     link="https://linkedin.com/in/kemenike"
                     target="#"
                 />
-                <SocialLink 
+                <SocialLink
                     icon="fa-brands fa-square-github"
                     labelName="GitHub"
                     link="https://github.com/kemenike"
                     target="#"
                 />
-                <SocialLink 
+                <SocialLink
                     icon="fa-free-solid fa-laptop-code"
                     labelName="Projects"
                     link="#projects__main"
                 />
-                <SocialLink 
+                <SocialLink
                     icon="fa-free-solid fa-user-astronaut"
                     labelName="About Me"
                     link="#about_me__main"
