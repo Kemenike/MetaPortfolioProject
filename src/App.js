@@ -6,7 +6,6 @@ import Landing from "./components/Landing";
 import AboutMe from "./components/AboutMe";
 import TopButton from "./components/TopButton.jsx";
 import Projects from "./components/Projects.jsx";
-import { Modal } from "@chakra-ui/react";
 
 //Font Awesome Imports
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -17,6 +16,8 @@ import {
   faUserAstronaut,
   faCircleUp,
   faMessage,
+  faSpinner,
+  faCheck
 } from "@fortawesome/free-solid-svg-icons";
 
 //Global Imports for FontAwesome Icons
@@ -27,7 +28,9 @@ library.add(
   faLaptopCode,
   faUserAstronaut,
   faCircleUp,
-  faMessage
+  faMessage,
+  faSpinner,
+  faCheck
 );
 
 //Animate On Scroll Initilization
@@ -46,7 +49,6 @@ function App() {
       <TopButton />
       <Header />
       <Landing />
-      <Modal />
       <Projects />
       <AboutMe />
     </div>

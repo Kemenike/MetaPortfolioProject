@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import './AboutMe.css';
 import emailjs from '@emailjs/browser';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function AboutMe() {
 
@@ -12,18 +13,34 @@ function AboutMe() {
   const [messageField, setMessageField] = useState("");
 
   // TODO: 4 Different Button States: Initial (Shows Submit), In progress (Loading), Confirmed(After Confirmed Clear message field), Failed
-  const [buttonState, setButtonState] = useState({ state: "initial" })
+  const [buttonState, setButtonState] = useState({ state: "initial", disabled: true })
 
 
   function clearForm() {
+    // TODO: Finish Implemenation
+    setUserNameField("");
+    setEmailField("");
+    setMessageField("");
+  }
 
+  function checkValidity () {
+    buttonState.disabled = !(userNameField !== "" && emailField !== '' && messageField !== '');  
+    console.log(buttonState.disabled);
+    return null;
   }
 
   function handleSubmit(e) {
     e.preventDefault();
-
+    if(buttonState.disabled) {
+      return;
+    }
+    setButtonState({ state: "loading" })
+    setInterval(() => {
+      setButtonState({ state: "error", disabled: true })
+    }, 10000)
     // Adds Success Class. TODO: Add to submit button.
-    form.current.classList += " success";
+
+    clearForm();
 
 
 
@@ -57,7 +74,7 @@ function AboutMe() {
             <h3 className="description">
               If you like what you saw please contact me!
             </h3>
-            <form className="test" onSubmit={handleSubmit} ref={form}>
+            <form onSubmit={handleSubmit} onChange={checkValidity} ref={form}>
               <label htmlFor="name_input">Name: </label>
               <input name='user_name' id='name'
                 onChange={(e) => {
@@ -75,17 +92,33 @@ function AboutMe() {
                 onChange={(e) => {
                   setMessageField(e.target.value);
                 }} />
-
-              <input
-                type="submit"
-                ref={formButton}
-                className='submit__button'
-              />
-            </form>
-          </div>
+              <button
+                className={`submit__button${buttonState.disabled ? ' disabled' : ""} ${buttonState.state}`}
+                onClick={handleSubmit}
+                ref={formButton}>
+              {
+                (() => {
+                  if (buttonState.state === 'initial') {
+                    return 'Submit';
+                  } else if (buttonState.state === 'loading') {
+                    return <FontAwesomeIcon className="spinner" icon="fa-solid fa-spinner" />;
+                  } else if (buttonState.state === 'complete') {
+                    formButton.current.style.backgroundColor = '#03FC8C';
+                    formButton.current.style.color = '#121212';
+                    return <FontAwesomeIcon icon="fa-solid fa-check" />;
+                  } else {
+                    formButton.current.style.backgroundColor = '#ff6e6e';
+                    formButton.current.style.color = '#121212';
+                    return "Error"
+                  }
+                })()
+              }
+            </button>
+          </form>
         </div>
       </div>
-    </section>
+    </div>
+    </section >
   )
 }
 

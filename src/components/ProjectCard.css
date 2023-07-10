@@ -40,7 +40,7 @@
 
 .project_card h1 {
     font-family: 'Teko', sans-serif;
-    font-size: 32px;
+    font-size: 3vmin;
     transition: all 300ms ease-in-out;
     opacity: 0;
 }
@@ -50,9 +50,10 @@
 }
 
 .project_card p {
-    font-size: 20px;
+    font-size: 1.7vmin;
     font-family: 'orbitron', sans-serif;
     opacity: 0;
+    font-weight: 300;
     transition: all 300ms ease-in-out;
 }
 
@@ -69,7 +70,6 @@
 
 .project_card:hover p {
     opacity: 100%;
-    font-weight: 300;
 }
 
 .gh_link {

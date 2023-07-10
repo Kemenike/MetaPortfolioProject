@@ -8,6 +8,10 @@
     color: #ddd;
 }
 
+.disabled {
+    cursor: not-allowed !important;
+}
+
 #about_me__main .text__wrapper {
     border-radius: 8px 0 0 8px;
 }
@@ -85,7 +89,7 @@ input, textarea{
     padding: 8px;
     margin-bottom: 12px;
     font-family: 'Orbitron', sans-serif;
-    background-color: #ddd;
+    background-color: #eee;
     border-radius: 4px;
 }
 
@@ -95,17 +99,19 @@ textarea {
 
 .submit__button {
     background-color: #121212;
+    border-radius: 4px;
     color: #ddd;
+    font-family: 'Orbitron', sans-serif;
     font-weight: 500;
     font-size: 1.5vmin;
     padding: 12px 0;
     transition: all 250ms ease-in-out;
+    cursor: pointer;
 }
 
 .submit__button:hover {
     background-color: #f701fd;
     color: #121212;
-    cursor: pointer;
 }
 
 .submit__button:active {
@@ -113,6 +119,21 @@ textarea {
     filter: brightness(70%);
 }
 
+.spinner {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
 
 @media only screen and (max-width: 1250px) {
     
